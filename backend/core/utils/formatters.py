@@ -84,6 +84,8 @@ def format_timestamp(
         return dt.strftime("%Y-%m-%d %H:%M:%S")
     elif format_type == "date":
         return dt.strftime("%Y-%m-%d")
+    elif format_type == "US_date":
+        return dt.strftime("%m-%d-%Y")
     else:
         return dt.strftime(format_type)
 

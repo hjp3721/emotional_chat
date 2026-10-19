@@ -213,6 +213,10 @@ class TestFormatters:
         date = format_timestamp(dt, "date")
         assert date == "2025-10-16"
 
+        # 美式日期格式
+        us_date = format_timestamp(dt, "US_date")
+        assert us_date == "10-16-2025"
+
 
 class TestHelpers:
     """辅助函数测试"""
